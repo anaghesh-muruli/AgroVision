@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.anaghesh.agrovision.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:padding="20dp">
+
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:layout_centerHorizontal="true"
+       android:scaleType="fitCenter"
+       android:layout_marginTop="30dp"
+       android:id="@+id/login_logo"
+       android:src="@drawable/agro"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_logo"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textinput_phone_number">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Phone Number"
+            android:id="@+id/login_edittext_phone_number"/>
+
+       </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/textinput_phone_number"
+        android:id="@+id/textinput_pin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="PIN"
+            android:id="@+id/login_edittext_pin"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textinput_pin"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:background="@color/colorAccent"
+        android:textColor="@color/Text"
+        android:id="@+id/login_login_button"/>
+
+</RelativeLayout>

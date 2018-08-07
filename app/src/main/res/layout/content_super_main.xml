@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.anaghesh.agrovision.SuperMainActivity"
+    tools:showIn="@layout/activity_super_main">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/central_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toLeftOf="@id/central_line"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/_mainpage_control"
+        android:background="@drawable/control"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/central_line"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/_mainpage_market"
+        android:background="@drawable/market"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toLeftOf="@id/central_line"
+        android:layout_below="@id/_mainpage_control"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/_mainpage_krushi_gyan"
+        android:background="@drawable/krishi_gyan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/central_line"
+        android:layout_below="@id/_mainpage_market"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/_mainpage_agro_monk"
+        android:background="@drawable/support"/>
+
+</RelativeLayout>
